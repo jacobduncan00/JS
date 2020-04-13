@@ -1,43 +1,33 @@
-// How to initialize objects in JavaScript
+const user = {
+  name: "Jacob",
+  age: 19,
+  married: false,
+  greet: function () {
+    console.log("Hello " + name);
+  },
+};
 
-let student = {
-  name: "Jacob", 
-  age: 18,
-  school: "Salisbury University",
-  major: "Computer Science",
-  minor: "Mathematics"
-}
+// This is how objects work
+// property : value
 
-// Student object prints in JSON format
-console.log(student);
+// What is a method?
+// A method is a function that is inside an object
+// for example, the greet property in the user object
 
-// Or we can extract certain information
-console.log(student.name);
-console.log(student.age);
+// How do we access information inside an object?
+// dot notation => object.property
+console.log(user.name);
 
-// Concatenate information from student object
-console.log(student.name + " is " + student.age + " years old!");
+// We can even do
+user.greet();
 
-// Can add values to object
-student.isAdmin = true;
+// Before our code gets run, there is a "Window" object that is created and it has a bunch of properties and functions that we can use to create cool things
 
-console.log(student);
+console.log(typeof consol);
+console.log(typeof window);
 
-// Can remove values from object
+// We can see that these ^ are just objects
+// with a bunch of properties and functions built
+// in for developers to use
 
-delete student.school;
-
-console.log(student);
-
-// Can also add multi-word values
-let message = "Likes birds";
-student[message] = true;
-
-console.log(student);
-
-let input = input("Which fruit would you like to buy? ");
-let bag = {
-  [input] : 5,
-}
-
-console.log("The " + input + " costs $" + bag[input] + "!");
+console.warn("This is a warning!");
