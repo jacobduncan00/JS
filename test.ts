@@ -45,3 +45,9 @@ function checkAndPop(a: number[]): number {
 console.log(checkAndPop(arr));
 
 console.log(arr);
+
+function transformWord(word: string): any {
+  console.log();
+}
+
+transformWord("Jacob");
